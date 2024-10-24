@@ -63,7 +63,7 @@ state = state if isinstance(state, int) else state[0]  # Ensure state is an inte
 while not done:
     frame2 = put_agent(frame.copy(), state)  # putting agent into the copy of the frame and passing the state
     cv2.imshow("Cliff Walking", frame2)
-    cv2.waitKey(250)  # after the wait it will show the next frame
+    cv2.waitKey(2)  # after the wait it will show the next frame
 
     action = int(np.random.randint(low=0, high=4,size=1))  # here we are taking a random action
     print(f"Action taken: {action}")

@@ -1,19 +1,22 @@
 import gym
 import numpy as np
-#from numpy.ma.core import shape
-import pickle as pkl
+
+import pickle as pkl   # this is used to store the Q table in our file
 
 cliffEnv=gym.make("CliffWalking-v0")
 
 #inintializing action value function which is a table in this case
-q_table =np.zeros(shape=(48,4)) #48 states and  4 colums which will hold the states for the Q value all initialized with zero
+q_table =np.zeros(shape=(48,4)) #48 states row  and  4 colums which will hold the states for the Q value all initialized with zero
 
 
 # explre is epsilon here and epsilon greedy policy  takes an action randomly with epsilon prob and  takes an optimum action with 1-epsilon prob
+
 def policy(state, explore=0.0):
     action =int(np.argmax(q_table[state]))   #this is taking optimum action
+     #argmax will take the action which will have the maximum q value , storing in action
     if np.random.random()<=explore:
-        action = int(np.random.randint(low=0, high=4, size=1))  #this is taking random  action
+        action = int(np.random.randint(low=0, high=4, size=1))
+        #this is taking random  action with epsilon prob
     return action
 
 # Parameters
