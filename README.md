@@ -124,7 +124,7 @@ Both algorithms save their Q-tables in pickle format:
 
 ## Simulation Demo
 
-![video.mp4](media/video.mp4)
+[video.mp4](media/video.mp4)
 
 ## Contributing
 
