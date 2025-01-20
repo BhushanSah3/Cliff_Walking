@@ -1,6 +1,7 @@
 import gym, cv2
 import numpy as np
 
+#https://gymnasium.farama.org/environments/toy_text/cliff_walking/
 from cv_show import frame
 
 # Creating the environment
