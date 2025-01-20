@@ -15,7 +15,7 @@ Here's a visual representation of the environment:
 
 ```
 ```
-![img.png](venv/img.png)
+![img.png](media/img.png)
 The agent can take four possible actions:
 - Up (0)
 - Right (1)
@@ -121,6 +121,10 @@ The visualization is implemented using OpenCV and updates in real-time as the ag
 Both algorithms save their Q-tables in pickle format:
 - `sarsa_q_table.pkl`: Contains the trained SARSA Q-table
 - The evaluator can load these tables to visualize the learned policies
+
+## Simulation Demo
+
+![video.mp4](media/video.mp4)
 
 ## Contributing
 
