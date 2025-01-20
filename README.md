@@ -13,8 +13,6 @@ The Cliff Walking environment consists of a 4x12 grid where:
 
 Here's a visual representation of the environment:
 
-```
-```
 ![img.png](media/img.png)
 The agent can take four possible actions:
 - Up (0)
@@ -123,7 +121,7 @@ Both algorithms save their Q-tables in pickle format:
 - The evaluator can load these tables to visualize the learned policies
 
 ## Simulation Demo
-[video.mp4](media/video.mp4)
+https://github.com/BhushanSah3/Cliff_Walking/issues/1#issue-2800018124
 
 ## Contributing
 
