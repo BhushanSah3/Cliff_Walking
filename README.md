@@ -15,7 +15,7 @@ Here's a visual representation of the environment:
 
 ```
 ```
-![img.png](venv/img.png)
+![img.png](images/img.png)
 The agent can take four possible actions:
 - Up (0)
 - Right (1)
